@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    overflow-x:unset;
+}
+
+header {
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1;
+    transition-duration: 0s;
+}
+
+header:hover {
+    border-top: 15px solid rgb(255, 255, 255);
+    border-bottom: 15px solid rgb(255, 255, 255);
+    background-color: white;
+    color: rgb(59, 189, 70);
+    transition-duration: 0.5s;
+    opacity: 75%;
+}
+
+.bt {
+    display: inline-block; /* Строчно-блочный элемент */
+
+    padding: 20px; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    height: 50px;
+    line-height: 50px;
+    font-size: 15pt;
+    font-family: Bahnschrift SemiBold;
+    cursor: pointer;
+}
