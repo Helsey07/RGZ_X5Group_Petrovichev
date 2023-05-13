@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X5 Group</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slider.css">
+    <script>
+      
+    </script>
+
+    <style>
+        .pictures{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            filter: brightness(50%);
+        }
+
+        .logo{
+            position: absolute;
+            left: 33%;
+            top: 33%;
+            transition: 0.5s;
+        }
+
+        .bt_2 {
+            display: inline-block;
+            padding: 20px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 15pt;
+            font-family: Bahnschrift SemiBold;
+            cursor: pointer;
+            transition: 0.3s;
+            opacity: 100%;
+            position: absolute;
+            right: 0;
+            text-decoration: none;
+        }
+
+        .bt_2:hover {
+            display: inline-block;
+            padding: 20px;
+            text-decoration: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 15pt;
+            font-family: Bahnschrift SemiBold;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            color: rgb(78, 158, 61);
+            text-shadow: rgb(146, 179, 151) 3px 0 8px;
+            opacity: 100%;
+            transition-duration: 0.3s;
+            text-decoration: none;
+        }
+
+        .bt_2:active {
+            display: inline-block;
+            padding: 20px;
+            text-decoration: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 14.5pt;
+            font-family: Bahnschrift SemiBold;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            color: rgb(78, 158, 61);
+            text-shadow: rgb(146, 179, 151) 3px 0 8px;
+            opacity: 100%;
+            transition-duration: 0.3s;
+            text-decoration: none;
+        }
+        
+        .history{
+            position:absolute;
+            top:95%;
+            font-family: Bahnschrift SemiBold;
+            width: 50%;
+            height: auto;
+            text-align: justify;
+            text-indent: 25px;
+            margin: 20px;
+        }
+
+        .about_company{
+            position:absolute;
+            font-family: Bahnschrift SemiBold;
+            width: 20%;
+            height: auto;
+            text-align: justify;
+            padding: 1%; 
+            font-size: 33pt;
+            text-align: center;
+            top: 58%;
+            left: 39%;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .about_company:hover{
+            position:absolute;
+            font-family: Bahnschrift SemiBold;
+            width: 20%;
+            height: auto;
+            text-align: justify;
+            padding: 1%; 
+            color: black;
+            font-size: 33pt;
+            text-align: center;
+            top: 58%;
+            left: 39%;
+            border: 4px solid white;
+            transition-duration: 0.3s;
+        }
+        .about_company a{
+            color: white;
+            text-decoration: none;
+            margin: 10 10 10 10px;
+        }
+
+        .about_company a:active{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 30pt;
+            transition-duration: 0.3s;
+        }
+      
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="bt">
+            <a>О компании</a>
+        </div>
+
+        <div class="bt">
+            <a>Основные финансовые показатели</a>
+        </div>
+
+        <div class="bt">
+            <a>Контактные данные</a>
+        </div>
+
+        <div class="bt">
+            <a>Видео</a>
+        </div>
+
+        <div class="bt_2">
+            <a>Официальный сайт</a>
+        </div>
+    </header>
+    
+    <main>
+
+        <div class="pictures">
+            <img src="233.jpg" width="100%" height="auto">
+        </div>
+
+        <div class="logo"><img src="logooo.png" width="50%" height="70%"></div>
+
+        <div class="about_company">
+            <a href="#about_company_transition">О компании</a>
+        </div>
+
+        <div class="history">
+            <h1 id="about_company_transition">История компании</h1>
+
+            <h2>
+                Х5 Group возникла более 25 лет назад из предпринимательской инициативы построить в России
+                компанию современной розничной торговли по лучшим мировыми практикам. В 1995 году был открыт
+                первый «Перекрёсток», в 1999-ом – первая «Пятёрочка».
+            </h2>
+
+            <h3>
+                Х5 сохраняет предпринимательский дух и нацелена на создание ценности для общества и акционеров
+                за счёт выхода на новый уровень технологичности и конкурентоспособности, оставаясь выбором
+                номер один на рынке еды.
+            </h3>
+        </div>
+
+        <div class="all">
+            <input checked type="radio" name="respond" id="desktop">
+                <article id="slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input  type="radio" name="slider" id="switch2">
+                    <input  type="radio" name="slider" id="switch3">
+
+                    <div id="slider">
+                        <div id="overflow">
+                            <div class="image">
+                                <article><img src="page1.jpg"></article>
+                                <article><img src="page2.jpg"></article>
+                                <article><img src="page3.jpg"></article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                    </div>
+
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                    </div>
+                </article>
+        </div>
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
