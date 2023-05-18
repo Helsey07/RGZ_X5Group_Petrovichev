@@ -1,0 +1,172 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+body {
+    font-family: PT Sans;
+    font-size: 20pt;
+    margin: 0;
+}
+
+.screen_1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(open_screen.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.screen_2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(listva2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.screen_2_title{
+    display: flex;
+    
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+.screen_2_text{
+    
+    max-width: 50%;
+    max-width: auto;
+    font-size: 17px;
+    color: black;
+    text-align: justify;
+    text-indent: 25px;
+    margin-right: 70px;
+    
+}
+
+.faсt_1{
+    width: 70%;
+    height: left;
+    text-align: center;
+    margin: 40px auto;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.screen_3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(Forests.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.screen_1_title{
+    max-width: 40%;
+    max-height: auto;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.big_logo:after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 3px;
+    background-color: white;
+    margin: 30px auto;
+}
+
+.screen_1_text{
+    font-size: 54px;
+    color: white;
+}
+
+.box_1{
+    max-width: 90%;
+    margin: 0 auto;
+    transition: 300ms;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.box_1:hover{
+    padding-top: 40px;
+    transition-duration: 500ms;
+}
+.nav{
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 3px solid white;
+    padding-bottom: 20px;
+}
+
+
+.nav_link{
+    color: white;
+    text-decoration: none;
+    margin-left: 3%;
+    margin-right: 3%;
+    transition: 0.3s;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.nav_link:hover{
+    color: rgb(101, 200, 78);
+    text-decoration: none;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition-property: 0.5s;
+}
+
+.nav_link:active{
+    font-size: 18px;
+    color: rgb(78, 158, 61);
+}
+
+.bt_open{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 15px;
+    
+    border: 2px solid white;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.bt_open:hover{
+    background-color: white;
+    transition-duration: 0.3s;
+    color: rgb(101, 200, 78);
+}
+
+.bt_open:active{
+    background-color: white;
+    transition-duration: 0.3s;
+    color: rgb(101, 200, 78);
+    font-size: 13px;
+    color: rgb(78, 158, 61);
+}
