@@ -4,57 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="basic.css">
-    <title>X5 Group</title>
-
-    <script>
-        function guess_1(){
-            let pyaterochka = document.getElementsByClassName('pyaterochka_1');
-            pyaterochka[0].style.display = 'none';
-            pyaterochka[1].style.display = 'block';
-        }
-
-        function guess_2(){
-            let pyaterochka = document.getElementsByClassName('pyaterochka_1');
-            pyaterochka[1].style.display = 'none';
-            pyaterochka[0].style.display = 'block';
-        }
-
-        function perekrestok_1(){
-            let perekrestok = document.getElementsByClassName('perekrestok');
-            perekrestok[0].style.display = 'none';
-            perekrestok[1].style.display = 'block';
-        }
-
-        function perekrestok_2(){
-            let perekrestok = document.getElementsByClassName('perekrestok');
-            perekrestok[1].style.display = 'none';
-            perekrestok[0].style.display = 'block';
-        }
-
-        function karusel_1(){
-            let karusel = document.getElementsByClassName('karusel');
-            karusel[0].style.display = 'none';
-            karusel[1].style.display = 'block';
-        }
-
-        function karusel_2(){
-            let karusel = document.getElementsByClassName('karusel');
-            karusel[1].style.display = 'none';
-            karusel[0].style.display = 'block';
-        }
-
-    </script>
+    <title>X5 Group || Финансовые показатели</title>
 </head>
-    
 <body>
     <header>
         <div class="box_1">
             <nav class="nav">
                 <a class="nav_link" href="#">О компании</a>
-                <a class="nav_link" href="#">Финансовые показатели</a>
+                <a class="nav_link" href="#RGZ2.html">Финансовые показатели</a>
                 <a class="nav_link" href="#">Контактные данные</a>
                 <a class="nav_link" href="#">Видео</a>
             </nav>
@@ -62,141 +20,11 @@
     </header>
 
     <main>
-        <div class="back" href="#screen_3">
-            <a class="bt_back" href="#">&uarr;</a>
-        </div>
-
-        <div class="screen_1">
-            <div class="screen_1_title">
-                <div class="big_logo">
-                    <img style="width: 100%;" src="logooo.png">
-                    <div class="screen_1_text">
-                        Выбор в пользу будущего
-                    </div>
-                </div>
-
-                <a class="bt_open" href="#screen_2">Узнать о компании</a>
-            </div>
-        </div>
-
-        <div class="screen_2" id="screen_2">
-            <div class="screen_2_title">
-                <div class="screen_2_text">
-                    <h1>
-                        История компании
-                    </h1>
-
-                    <h2>
-                        Х5 Group возникла более 25 лет назад из предпринимательской инициативы построить в России
-                        компанию современной розничной торговли по лучшим мировыми практикам. В 1995 году был открыт
-                        первый «Перекрёсток», в 1999-ом – первая «Пятёрочка».
-                    </h2>
-        
-                    <h3>
-                        Х5 сохраняет предпринимательский дух и нацелена на создание ценности для общества и акционеров
-                        за счёт выхода на новый уровень технологичности и конкурентоспособности, оставаясь выбором
-                        номер один на рынке еды.
-                    </h3>
-
-                    <h3>
-                        Компания основана в 2006 году в результате слияния рознично-торговых сетей «Пятёрочка»
-                        и «Перекрёсток». При слиянии объединённая компания получила опцион на право покупки сети
-                        гипермаркетов «Карусель» в 2008 году, принадлежавшей тогда акционерам «Пятёрочки».<br>
-                    </h3>
-
-                    <div class="faсt_1">
-                        28 сентября 2018 года российское издание журнала Forbes опубликовало рейтинг крупнейших частных компаний,
-                        в котором X5 Group заняла второе место после компании «Лукойл».
-                    </div>
-                </div>
-
-                <div class="slider_block">
-                    <article id="slider">
-                         <input checked type="radio" name="slider" id="switch1">
-                         <input  type="radio" name="slider" id="switch2">
-                         <input  type="radio" name="slider" id="switch3">
-        
-                         <div id="slider">
-                            <div id="overflow">
-                                <div class="image">
-                                    <article><img src="page2.jpg"></article>
-                                    <article><img src="page1.jpg"></article>
-                                    <article><img src="page3.jpg"></article>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div id="active">
-                            <label for="switch1"></label>
-                            <label for="switch2"></label>
-                            <label for="switch3"></label>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-
-        <div class="screen_3" id="screen_3">
-            <div class="screen_3_title">
-                <div class="screen_3_text">
-                    <h1>
-                        Основные партнёры:
-                    </h1>
-                </div>
-
-                <div class="partners">
-                    <div class="pyaterochka_1">
-                        <img src="pyaterochka.png" width="35%"><br>
-                        <a>Торговая сеть «Пятёрочка»</a><br>
-                        <button class="bottom_1" onclick="guess_1()">Подробнее</button>
-                    </div>
-
-                    <div class="pyaterochka_1" style="display: none;">
-                        <a>
-                        Торговая сеть «Пятёрочка» входит в X5 Group, ведущую продуктовую розничную компанию в России,<br>
-                        которая включает в себя также сеть супермаркетов «Перекрёсток» и дискаунтеры «Чижик».<br>
-                        По состоянию на 31 декабря 2022 года в стране работали 19164 магазина «Пятёрочка» в 67 регионах РФ.
-                        </a><br>
-                        <button class="bottom_2" onclick="guess_2()">Назад</button>
-                    </div>
-
-                    <div class="perekrestok">
-                        <img src="perekrestok.png" width="35%"><br>
-                        <a>Торговая сеть «Перекрёсток»</a><br>
-                        <button class="bottom_1" onclick="perekrestok_1()">Подробнее</button>
-                    </div>
-
-                    <div class="perekrestok" style="display: none;">
-                        <a>
-                            Российская сеть супермаркетов, которой управляет X5 Group. В августе 2019 года открылся<br>
-                            800-й супермаркет сети. По итогам 2019 года торговая сеть «Перекрёсток» насчитывает 852<br>
-                            супермаркета.В 2020 году запущена программа обновления: около половины торгового<br>
-                            зала должны занимать продукты категории fresh.
-                        </a><br>
-                        <button class="bottom_1" onclick="perekrestok_2()">Назад</button>
-                    </div>
-            
-                    <div class="karusel">
-                        <img src="karusel.png" width="35%"><br>
-                        <a>Торговая сеть «Карусель»</a><br>
-                        <button class="bottom_1" onclick="karusel_1()">Подробнее</button>
-                    </div>
-            
-                    <div class="karusel" style="display: none;">
-                        <a>
-                            Магазины с широким ассортиментом продовольственных и непродовольственных товаров для дома<br>
-                            и семьи по привлекательным ценам. «Карусель» предлагает самые низкие цены на базовые продукты,<br>
-                            а также уникальные предложения держателям карт.
-                        </a><br>
-                        <button class="bottom_1" onclick="karusel_2()">Подробнее</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        ПРОБНИК
     </main>
 
     <footer>
-        <a>&copy;2015-2023 X5 Retail Group N.V.</a>
+
     </footer>
 </body>
 </html>
