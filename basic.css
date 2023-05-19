@@ -1,0 +1,66 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+body {
+    font-family: PT Sans;
+    font-size: 20pt;
+    margin: 0;
+}
+
+footer{
+    font-family: PT Sans;
+    padding: 15px;
+}
+
+.box_1{
+    max-width: 90%;
+    margin: 0 auto;
+    transition: 300ms;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box_1:hover{
+    padding-top: 40px;
+    transition-duration: 500ms;
+}
+
+.nav{
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 3px solid white;
+    padding-bottom: 20px;
+}
+
+.nav_link{
+    color: white;
+    text-decoration: none;
+    margin-left: 3%;
+    margin-right: 3%;
+    transition: 0.3s;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.nav_link:hover{
+    color: rgb(101, 200, 78);
+    text-decoration: none;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition-property: 0.5s;
+}
+
+.nav_link:active{
+    font-size: 18px;
+    color: rgb(78, 158, 61);
+}
