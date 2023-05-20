@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="style_2.css">
+    <link rel="stylesheet" href="table_1.css">
+    <link rel="stylesheet" href="Chart.min.css">
     <title>X5 Group || Финансовые показатели</title>
 
+    <script src="Chart.min.js"></script>
     <script>
         function alert_2_screen(){
-            let a = ' "О компании!".'
+            let a = ' "Финансовые показатели".'
             alert('Вы уже находитесь на странице' + a);
         }
     </script>
@@ -27,11 +31,304 @@
     </header>
 
     <main>
-        
-        <div class="back" href="#screen_3">
+        <div class="back">
             <a class="bt_back" href="#">&uarr;</a>
         </div>
 
+        <div class="screen_1">
+            <div class="screen_1_title">
+                <div class="open_window">
+                    <div class="screen_1_text">
+                        Х5 Group растет быстрее рынка и сохраняет лидерство среди российских ритейлеров:<br> 
+                        наша динамика составляет 9% в год, притом что рынок за последний год вырос всего на 2%.<br> 
+                        Доля Х5 Group по выручке – 12,8% российского розничного рынка FMCG, это на 1,8% больше, чем в 2020 году.
+                    </div>
+                </div>
+                <a class="bt_open" href="#screen_2">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="screen_2" id="screen_2">
+            <div class="screen_2_title">
+                <div class="screen_2_top">
+                    <h1>
+                        <em>2022: Рост выручки на 18,3%, до 2,6 трлн рублей</em>
+                    </h1>
+
+                    <h2>
+                        В 2022 году чистая выручка X5 достигла 2,6 трлн рублей, что на 18,3% больше, чем годом ранее.
+                        Финансовые и операционные результаты ритейлер опубликовал 24 января 2023 года.
+                    </h2>
+
+                    <h3>
+                        Согласно отчету, выручка дискаунтеров «Чижик» по итогам 2022 года выросла в 12 раз относительно
+                        2021-го и составила 35,8 млрд рублей, а количество магазинов увеличилось в 7 раз, до 517 на конец
+                        декабря 2022 года. Выручка «Пятерочки» повысилась на 18%, до 2,1 трлн рублей, «Перекрестка» - на 8,3%,
+                        до 365 млрд рублей, выручка «Карусели» снизилась на 50%, до 15,6 млрд рублей.
+                    </h3>
+                </div>
+
+                <div class="screen_2_botton">
+                    <table class="table_one">
+                        <tr>
+                            <th colspan="5"><em>Динамика выручки X5 GROUP (трлн.руб)</em></th>
+                        </tr>
+
+                        <tr>
+                          <th>2018</th>
+                          <th>2019</th>
+                          <th>2020</th>
+                          <th>2021</th>
+                          <th>2022</th>
+                        </tr>
+
+                        <tr>
+                          <td>1,5</td>
+                          <td>1,7</td>
+                          <td>2,0</td>
+                          <td>2,2</td>
+                          <td>2,6</td>
+                        </tr>
+                    </table>
+
+                    <table class="table_two">
+                        <tr>
+                            <th colspan="5"><em>Динамика выручки по компаниям 4 квартал 2022 года(млн.руб)</em></th>
+                        </tr>
+
+                        <tr>
+                          <th>«Чижик»</th>
+                          <th>«Карусель»</th>
+                          <th>«Перекресток»</th>
+                          <th>«Пятерочка» </th>
+                          <th>Розничная выручка</th>
+                        </tr>
+
+                        <tr>
+                          <td>4 099</td>
+                          <td>5 430</td>
+                          <td>102 574</td>
+                          <td>489 193</td>
+                          <td>601 776</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen_3">
+            <div class="screen_3_title">
+                <div class="screen_3_top">
+                    <h1>
+                        <em>Финансовые показатели акций:</em>
+                    </h1>
+                </div>
+
+                <div class="screen_3_botton">
+                    <table class="table_three">
+                        <tr>
+                            <th colspan="9"><em>Число акций ао МСФО (млн.)</em></th>
+                        </tr>
+
+                        <tr>
+                            <th>2014</th>
+                            <th>2015</th>
+                            <th>2016</th>
+                            <th>2017</th>
+                            <th>2018</th>
+                            <th>2019</th>
+                            <th>2020</th>
+                            <th>2021</th>
+                            <th>2022</th>
+                        </tr>
+
+                        <tr>
+                            <td>67,9</td>
+                            <td>67,9</td>
+                            <td>271,6</td>
+                            <td>271,6</td>
+                            <td>271,6</td>
+                            <td>271,6</td>
+                            <td>271,6</td>
+                            <td>271,6</td>
+                            <td>271,6</td>
+                        </tr>
+
+                    </table>
+
+                    <table class="table_four">
+                        <tr>
+                            <th colspan="20"><em>Цены закрытия за весь апрель (руб.)</em></th>
+                        </tr>
+
+                        <tr>
+                            <th>3.04.2023</th>
+                            <th>4.04.2023</th>
+                            <th>5.04.2023</th>
+                            <th>6.04.2023</th>
+                            <th>7.04.2023</th>
+                            <th>10.04.2023</th>
+                            <th>11.04.2023</th>
+                            <th>12.04.2023</th>
+                            <th>13.04.2023</th>
+                            <th>14.04.2023</th>
+                        </tr>
+
+                        <tr>
+                            <td>1424,9</td>
+                            <td>1410,2</td>
+                            <td>1410,6</td>
+                            <td>1410,1</td>
+                            <td>1408,7</td>
+                            <td>1440,1</td>
+                            <td>1428,9</td>
+                            <td>1433,2</td>
+                            <td>1439,6</td>
+                            <td>1447,4</td>
+                        </tr>
+
+                        <tr>
+                            <th>17.04.2023</th>
+                            <th>18.04.2023</th>
+                            <th>19.04.2023</th>
+                            <th>20.04.2023</th>
+                            <th>21.04.2023</th>
+                            <th>24.04.2023</th>
+                            <th>25.04.2023</th>
+                            <th>26.04.2023</th>
+                            <th>27.04.2023</th>
+                            <th>28.04.2023</th>
+                        </tr>
+
+                        <tr>
+                            <td>1465,5</td>
+                            <td>1532,0</td>
+                            <td>1537,5</td>
+                            <td>1545,0</td>
+                            <td>1539,5</td>
+                            <td>1584,5</td>
+                            <td>1562,5</td>
+                            <td>1557,5</td>
+                            <td>1564,5</td>
+                            <td>1550,0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen_4">
+            <div class="screen_4_title">
+                <div class="table_five">
+                    <table>
+                        <tr>
+                            <th colspan="20"><em>Минимальные и максимальные скачки цены ацкий за апрель</em></th>
+                        </tr>
+
+                        <tr>
+                            <th colspan="2">3.04.2023</th>
+                            <th colspan="2">4.04.2023</th>
+                            <th colspan="2">5.04.2023</th>
+                            <th colspan="2">6.04.2023</th>
+                            <th colspan="2">7.04.2023</th>
+                            <th colspan="2">10.04.2023</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>min</th>
+                            <th>max</th>
+                            <th>min</th>
+                            <th>max</th>
+                            <th>min</th>
+                            <th>max</th>
+                            <th>min</th>
+                            <th>max</th>
+                            <th>min</th>
+                            <th>max</th>
+                            <th>min</th>
+                            <th>max</th>
+                        </tr>
+                        <tr>
+                            <td>1413,5</td>
+                            <td>1435,5</td>
+                            <td>1401,0</td>
+                            <td>1428,5</td>
+                            <td>1393,0</td>
+                            <td>1419,0</td>
+                            <td>1398,0</td>
+                            <td>1420,0</td>
+                            <td>1396,0</td>
+                            <td>1425,5</td>
+                            <td>1413,0</td>
+                            <td>1440,0</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">11.04.2023</th>
+                            <th colspan="2">12.04.2023</th>
+                            <th colspan="2">13.04.2023</th>
+                            <th colspan="2">14.04.2023</th>
+                            <th colspan="2">17.04.2023</th>
+                            <th colspan="2">18.04.2023</th>
+                        </tr>
+                        <tr>
+                            <td>1411,0</td>
+                            <td>1468,0</td>
+                            <td>1442,5</td>
+                            <td>1448,0</td>
+                            <td>1420,0</td>
+                            <td>1445,0</td>
+                            <td>1424,0</td>
+                            <td>1440,0</td>
+                            <td>1445,0</td>
+                            <td>1473,0</td>
+                            <td>1471,0</td>
+                            <td>1538,0</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">19.04.2023</th>
+                            <th colspan="2">20.04.2023</th>
+                            <th colspan="2">21.04.2023</th>
+                            <th colspan="2">24.04.2023</th>
+                            <th colspan="2">25.04.2023</th>
+                            <th colspan="2">26.04.2023</th>
+                        </tr>
+                        <tr>
+                            <td>1506,0</td>
+                            <td>1570,0</td>
+                            <td>1520,0</td>
+                            <td>1560,0</td>
+                            <td>1507,0</td>
+                            <td>1552,0</td>
+                            <td>1530,0</td>
+                            <td>1592,0</td>
+                            <td>1547,0</td>
+                            <td>1587,0</td>
+                            <td>1550,5</td>
+                            <td>1556,5</td>
+                        </tr>
+                    
+                        <tr>
+                            <th colspan="2">27.04.2023</th>
+                            <th colspan="2">28.04.2023</th>
+                        </tr>
+
+                        <tr>
+                            <td>1520,5</td>
+                            <td>1578,0</td>
+                            <td>1536,5</td>
+                            <td>1572,5</td>
+                            <th colspan="8"><em>&copy; Источник: Московская Биржа (www.moex.com)</em></th>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="screen_5">
+            <div class="screen_5_title">
+                fdfdfd
+            </div>
+        </div>
     </main>
 
     <footer>

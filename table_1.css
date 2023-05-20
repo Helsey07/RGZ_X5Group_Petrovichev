@@ -1,0 +1,28 @@
+table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #7c9887;
+    color: white;
+    border: 16px solid #7c9887;
+    border-radius: 20px;
+    text-align: center;
+}
+
+th {
+    font-size: 18px;
+    padding: 10px;
+}
+
+td {
+    background: #3e7352;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+td:hover{
+    background-color: #2c543b;
+    transition-duration: 0.3s;
+}
