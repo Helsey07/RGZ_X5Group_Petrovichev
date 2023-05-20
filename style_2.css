@@ -82,6 +82,7 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .bt_open:hover{
@@ -194,13 +195,7 @@
     margin-left: 3%;
 }
 
-.screen_5_title{
-    background-color: aqua;
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    height: 90%;
-    
+.sdsds{
+    text-align: center;
+    margin-top:5px;
 }
-
-

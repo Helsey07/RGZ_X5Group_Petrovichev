@@ -16,6 +16,27 @@
             let a = ' "Финансовые показатели".'
             alert('Вы уже находитесь на странице' + a);
         }
+        let data = [1424.9, 1410.2, 1410.6, 1410.1, 1408.7, 1440.1, 1428.9, 1433.2, 1439.6, 1447.4,
+            1465.5, 1532, 1537.5, 1545, 1539.5, 1584.5, 1562.5, 1557.5, 1564.5, 1550];
+
+        function min_value(data){
+            alert('Минимальное значение закрытие сделки за апрель: ' + Math.min.apply(null, data) + 'руб.')
+        }
+
+        function max_value(data){
+            alert('Максимальное значение закрытие сделки за апрель: ' + Math.max.apply(null, data) + 'руб.')
+        }
+
+        function standard_deviation(data){
+            let kol = data.length
+            let sum = data.map(i=>x+=i, x=0).reverse()[0]
+            let sr_arf = sum/kol
+            let sr_kv = data.map(i=>x+=(i-sr_arf)**2, x=0).reverse()[0]
+            let sr_kv_2 = sr_kv/kol
+            let final = Math.sqrt(sr_kv_2)
+
+            alert('Среднее квадратичное отклонение: ' + final)
+        }
     </script>
 </head>
 <body>
@@ -71,7 +92,7 @@
                 <div class="screen_2_botton">
                     <table class="table_one">
                         <tr>
-                            <th colspan="5"><em>Динамика выручки X5 GROUP (трлн.руб)</em></th>
+                            <th colspan="5"><em>Динамика выручки X5 GROUP (млрд.руб)</em></th>
                         </tr>
 
                         <tr>
@@ -214,6 +235,12 @@
                         </tr>
                     </table>
                 </div>
+
+                <div class="sdsds">
+                    <div class="bt_open" onclick="min_value(data)">Минимальное значение</div>
+                    <div class="bt_open" onclick="max_value(data)">Максимальное значение</div>
+                    <div class="bt_open" onclick="standard_deviation(data)">Среднеквадратическое отклонение</div>
+                </div>
             </div>
         </div>
 
@@ -324,11 +351,6 @@
             </div>
         </div>
         
-        <div class="screen_5">
-            <div class="screen_5_title">
-                fdfdfd
-            </div>
-        </div>
     </main>
 
     <footer>
