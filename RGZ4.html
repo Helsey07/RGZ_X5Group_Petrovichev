@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X5 Group || Видео</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="style_4.css">
+
+    <script>
+        function alert_2_screen(){
+            let a = ' "Видео".'
+            alert('Вы уже находитесь на странице' + a);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="box_1">
+            <nav class="nav">
+                <a class="nav_link" href="RGZ1.html">О компании</a>
+                <a class="nav_link" href="RGZ2.html">Финансовые показатели</a>
+                <a class="nav_link" href="RGZ3.html">Контактные данные</a>
+                <a class="nav_link_open" onclick="alert_2_screen()">Видео</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="screen_1">
+            <div class="screen_1_title">
+                <div class="screen_1_top">
+                    <iframe class="video"
+                        width="800" height="450" src="https://www.youtube.com/embed/jfkM-2ik0Pw"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="screen_1_bottom">
+                    <a>
+                        Выпустили финансовые результаты за 1 квартал 2023 года.
+                        Выручка Х5 увеличилась на 15,2%, чистая выручка цифровых
+                        изнесов выросла на 35,9% и достигла 3,7% от консолидированной
+                        выручки компании. Рентабельность скорректированной
+                        EBITDA составила 5,8%.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a>&copy;2015-2023 X5 Retail Group N.V.</a>
+    </footer>
+</body>
+</html>
