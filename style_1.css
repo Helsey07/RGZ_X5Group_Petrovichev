@@ -20,7 +20,6 @@
 
 .screen_2_title{
     display: flex;
-    
     width: 90%;
     height: 90%;
     margin: 0 auto;
@@ -28,7 +27,6 @@
 
 .screen_2_text{
     max-width: 50%;
-    max-width: auto;
     font-size: 17px;
     color: black;
     text-align: justify;
@@ -56,7 +54,6 @@
 }
 .screen_3_title{
     display: block;
-   
     width: 90%;
     height: 90%;
     margin: 0 auto;
@@ -64,7 +61,6 @@
 }
 
 .screen_3_text{
-    
     font-size: 20px;
     width: auto;
     height: 10%;
@@ -75,8 +71,7 @@
 
 .partners{
     display:flex;
-    
-    margin: 100px auto;
+    margin: 100px;
     max-height: 90%;
     max-width: 90%;
 }
@@ -194,12 +189,9 @@
 
 .bt_open{
     display: inline-block;
-    vertical-align: top;
     padding: 10px 15px;
-    
     border: 2px solid white;
     border-radius: 10px;
-
     font-size: 14px;
     font-weight: 700;
     color:white;
@@ -217,45 +209,6 @@
 .bt_open:active{
     background-color: white;
     transition-duration: 0.3s;
-    color: rgb(101, 200, 78);
     font-size: 13px;
     color: rgb(78, 158, 61);
 }
-
-.back{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin: 25px;
-    padding: 20px 30px;
-}
-
-.bt_back{
-    color: white;
-    text-decoration: none;
-    margin-left: 3%;
-    margin-right: 3%;
-    transition: 0.3s;
-    border: 4px solid rgb(101, 200, 78);
-    color: rgb(101, 200, 78);
-    border-radius: 10px;
-    padding: 5px 10px;
-    font-size: 30px;
-}
-
-.bt_back:hover{
-    color: grey;
-    transition-duration: 0.3s;
-    border: 5px solid grey;
-    color: grey;
-    font-size: 40px;
-}
-
-.bt_back:active{
-    transition-duration: 0.3s;
-    border: 4px solid rgb(60, 60, 60);
-    color: rgb(60, 60, 60);
-    font-size: 35px;
-}
-
-
