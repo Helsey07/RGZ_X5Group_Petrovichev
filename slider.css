@@ -1,0 +1,88 @@
+/*расположение слайдера*/
+.slider_block{
+    width: 50%;
+    height: 70%;
+    margin-right: 0;
+    left: 20px;
+}
+
+/*центровка слайдера*/
+#slider{
+   margin: 20px 20px 0 20px;
+}
+
+/*Все изображения справа друг от друга*/
+#slider article{
+    width: 20%;
+    float: left;
+}
+/*размер блока с изображениями*/
+#slider .image{
+    width: 500%;
+    line-height: 0;
+}
+/*Скрываем всё что выходит за рамки*/
+#overflow{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+article img{ /*размер изображений*/
+    width: 100%;
+}
+
+#dectop:checked ~ #slider{ /*размер всего слайдера*/
+    max-width: 40%;
+}
+
+
+label, a{
+    cursor: pointer;
+}
+
+.slider_block input{ /*скрытие стандартные чекбоксы на странице*/
+    display: none;
+}
+/*расположение изображений при активации переключателя*/
+#switch1:checked ~ #slider .image{
+    margin-left: 0;
+}
+#switch2:checked ~ #slider .image{
+    margin-left: -100%;
+}
+#switch3:checked ~ #slider .image{
+    margin-left: -200%;
+}
+
+
+#active label{
+    border-radius: 10px;
+    display: inline-block;
+    width: 20%;
+    height: 12%;
+    background: #bbb;
+}
+/*расположение блока с переключателями*/
+#active {
+    height: 50px;
+    text-align: center;
+}
+
+#active label:hover{ /*чекбокс при наведении*/
+    background: #76c8ff;
+    border-color: #777 !important;
+}
+
+/*Цвет активного чекбоксса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3){
+    background-color: #36bc4a;
+    border-color: #1f842e !important;
+}
+
+/*Анимация перелистывания*/
+#slider .image{
+    transition: 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
